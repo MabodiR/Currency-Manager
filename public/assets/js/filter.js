@@ -32,7 +32,7 @@ $('#name, #editName').on('input', async function () {
 // Event listener when the code input changes
 $('#code, #editCode').on('input', async function () {
     const searchTerm = $(this).val().trim().toLowerCase();
-    const listId = isEditMode ? 'editCurrencyCodeList' : 'CodeList';
+    const listId = isEditMode ? 'editCurrencyCodeList' : 'codeList';
 
     // Clear previous options
     $(`#${listId}`).html('');
